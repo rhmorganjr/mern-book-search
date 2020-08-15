@@ -33,9 +33,10 @@ const resolvers = {
               throw new AuthenticationError('Incorrect credentials');
             }
           
-            const token = signToken(user);
-            return { token, user };
+            //const token = signToken(user);
+            //return { token, user };
+            return {user}
           }
-      }
+      },
   };  
   module.exports = resolvers;
